@@ -1,0 +1,47 @@
+<h2 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-51596">Estado</h2>
+
+<datasource data-component="crn-datasource" filter="" name="Estado" entity="demo.Estado" keys="id" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;nome&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true" parameters="" dependent-lazy-post="" checkrequired=""></datasource>
+
+        <div role="search" ng-hide="" data-component="crn-textinput" id="crn-datasource-filter-general51596" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Estado&quot;,&quot;entity&quot;:&quot;demo.Estado&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;demo.Estado&quot;,&quot;customId&quot;:&quot;Estado&quot;,&quot;name&quot;:&quot;Estado&quot;,&quot;customQueryName&quot;:&quot;demo.Estado&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;demo.entity.Estado&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;keys&quot;:&quot;id&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;{\&quot;params\&quot;:[],\&quot;expression\&quot;:{\&quot;type\&quot;:\&quot;OR\&quot;,\&quot;args\&quot;:[{\&quot;type\&quot;:\&quot;%\&quot;,\&quot;left\&quot;:\&quot;nome\&quot;,\&quot;right\&quot;:\&quot;{{vars.search|raw}}\&quot;,\&quot;args\&quot;:[]}]}}&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;batchMode&quot;:false,&quot;hideModalButtons&quot;:false,&quot;editable&quot;:&quot;popupCustom&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/logged/estado.view.html&quot;,&quot;popupInsert&quot;:&quot;modal22053&quot;,&quot;popupEdit&quot;:&quot;modal22053&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nome&quot;,&quot;headerText&quot;:&quot;Nome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}" ng-model="vars.grid51596" class="" style="">
+    </cron-grid>
+</section>
+
+
+
+
+<div class="modal fade" id="modal22053">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="component-holder modal-header">
+       <div class="list-group list-group-sm row">
+         <div data-container="true" data-replace="true">Edição</div>
+       </div>
+      </div>
+      <div class="modal-body">
+       <div class="list-group list-group-sm row">
+         <div data-component="crn-textinput" id="crn-textinput-43921" class="">
+                        <div class="form-group">
+                                <label for="textinput-nome17411" class="">Nome</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="Estado.active.nome" class="form-control k-textbox" id="textinput-nome17411" placeholder="Nome" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+       </div>
+     </div>
+     <div class="modal-footer">
+       <div class="list-group list-group-sm row">
+         
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
